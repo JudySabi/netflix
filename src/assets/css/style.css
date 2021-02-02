@@ -1,8 +1,8 @@
 .container {
   background-color: #000000;
   width: 100vw;
-  height: 100vh;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
 }
 
 header img {
@@ -24,13 +24,14 @@ p {
 
 .sections div {
   height: 200px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
+}
+
+.sections div::-webkit-scrollbar {
+  display: none;
 }
 
 .sections div .moviesList img {

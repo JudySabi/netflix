@@ -1,5 +1,5 @@
 const Category = (props) => {
-  return <p>{props.category}</p>;
+  return <p>{props.categorie}</p>;
 };
 
 export default Category;

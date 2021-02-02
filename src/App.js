@@ -1,15 +1,16 @@
 import "./App.css";
 import Header from "./Components/Header";
-import Sections from "./Components/Sections";
-import data from "./data.json";
+import Section from "./Components/Section";
+import datajson from "./data.json";
 
 function App() {
   return (
     <div className="container">
       <Header />
-      {data.map((elem) => {
-        console.log(elem);
-        return <Sections />;
+
+      {datajson.map((elem, index) => {
+        // Je récupère l'ensemble du data.json et le stock dans ma props data
+        return <Section key={index} data={elem} />;
       })}
     </div>
   );
